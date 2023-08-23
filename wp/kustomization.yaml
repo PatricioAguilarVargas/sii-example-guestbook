@@ -1,7 +1,12 @@
+kind: Kustomization
+generatorOptions:
+  disableNameSuffixHash: true
+  labels:
+    password: wordpress
 secretGenerator:
 - name: mysql-pass
   literals:
-  - password=2205
+  - password=wordpress
 resources:
   - namespace.yaml
   - mysql-deployment.yaml
