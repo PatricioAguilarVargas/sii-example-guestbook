@@ -54,7 +54,7 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: mysql-pass
+              name: mysql-pass-78fmcg5ccc
               key: password
         - name: MYSQL_DATABASE
           value: wordpress
@@ -63,7 +63,7 @@ spec:
         - name: MYSQL_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: mysql-pass
+              name: mysql-pass-78fmcg5ccc
               key: password
         ports:
         - containerPort: 3306
